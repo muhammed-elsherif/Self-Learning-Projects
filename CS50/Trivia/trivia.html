@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the capital of Egypt?</h3>
+
+                    <button id="option-A" type="button" ><li>Alexandria</li></button>
+                    <button id="option-B" type="button" ><li>Giza</li></button>
+                    <button id="option-C" type="button" ><li>Cairo</li></button>
+                    <button id="option-D" type="button" ><li>Aswan</li></button>
+
+                <p id="itemOptions"><p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>How the Earth look like?</h3>
+                <form>
+                    <input autocomplete="off" autofocus id="answer" placeholder="Answer" type="text">
+                    <input type="submit">
+                </form>
+                <p id="itemForm"></p>
+            </div>
+        </div>
+        <script>
+            const option1 = document.getElementById("option-A");
+            option1.addEventListener("click", myFunction1);
+
+            const option2 = document.getElementById("option-B");
+            option2.addEventListener("click", myFunction2);
+
+            const option3 = document.getElementById("option-C");
+            option3.addEventListener("click", myFunction3);
+
+            const option4 = document.getElementById("option-D");
+            option4.addEventListener("click", myFunction4);
+
+            result = document.getElementById("answer");
+            const inputHandler = function(e) {
+                answer.style.backgroundColor = "white";
+                itemForm.style.backgroundColor = "white";
+                document.getElementById("itemForm").innerHTML = "";
+            }
+
+            const F = document.querySelector('form').addEventListener('submit',free);
+            document.querySelector('form').addEventListener('input',inputHandler);
+
+            function myFunction1() {
+                itemOptions.style.backgroundColor = "red";
+                option1.style.backgroundColor = "red";
+                option2.style.backgroundColor = "white";
+                option3.style.backgroundColor = "white";
+                option4.style.backgroundColor = "white";
+                document.getElementById("itemOptions").innerHTML = "Incorrect";
+            }
+
+            function myFunction2() {
+                event.preventDefault();
+                itemOptions.style.backgroundColor = "red";
+                option2.style.backgroundColor = "red";
+                option1.style.backgroundColor = "white";
+                option3.style.backgroundColor = "white";
+                option4.style.backgroundColor = "white";
+                document.getElementById("itemOptions").innerHTML = "Incorrect";
+            }
+
+            function myFunction3() {
+                itemOptions.style.backgroundColor = "green";
+                option3.style.backgroundColor = "green";
+                option1.style.backgroundColor = "white";
+                option2.style.backgroundColor = "white";
+                option4.style.backgroundColor = "white";
+                document.getElementById("itemOptions").innerHTML = "Correct!";
+            }
+
+            function myFunction4() {
+                event.preventDefault();
+                itemOptions.style.backgroundColor = "red";
+                option4.style.backgroundColor = "red";
+                option1.style.backgroundColor = "white";
+                option2.style.backgroundColor = "white";
+                option3.style.backgroundColor = "white";
+                document.getElementById("itemOptions").innerHTML = "Incorrect";
+            }
+
+            function free() {
+                if(document.querySelector('#answer').value == 'oval') {
+                    event.preventDefault();
+                    answer.style.backgroundColor = "green";
+                    itemForm.style.backgroundColor = "green";
+                    document.getElementById("itemForm").innerHTML = "Correct!";
+                }
+                else {
+                    event.preventDefault();
+                    answer.style.backgroundColor = "red";
+                    itemForm.style.backgroundColor = "red";
+                    document.getElementById("itemForm").innerHTML = "Incorrect!";
+                }
+            }
+        </script>
+    </body>
+</html>
