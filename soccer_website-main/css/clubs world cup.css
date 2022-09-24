@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+:root {
+    --text_color1: #fff;
+    --text_color2: #101010;
+    --text_color3: #420808;
+    --text_color4: #d32525;
+    --text_color5: #143564;
+    --text_color6: #3f8ffc;
+    --bg_color1: #881c50;
+    --bg_color2: #222222;
+    --bg_color3: #315c8f;
+    --bg_color4: #3475ca;
+    --bg_color5: #641010;
+    --bg_color6: #0e3a68;
+    --bg_color7: #12222d;
+    --bg_color8: #fff;
+    --bg_color9: #262626;
+    --bg_color10: #262626;
+    --bg_color11:#f9f9f9;
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.head {
+    position: sticky;
+    /*  position: fixed; */
+    top: 2px;
+    left: 0;
+    right: 0;
+    background: var(--bg_color2);
+    /* background: transparent; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000000;
+}
+
+.navbar {
+    position: relative;
+    left: 25%;
+}
+
+header .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar ul li {
+    position: relative;
+    display: inline-block;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: var(--text_color1);
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    color: var(--text_color2);
+    background: var(--bg_color4);
+}
+ .WebLogo {
+  width: 59px;
+  position: absolute;
+  left: 50px;
+}
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    min-width: 200px;
+    max-width: 350px;
+    display: none;
+}
+
+header .navbar ul li ul a {
+    background: var(--bg_color11);
+    color: var(--text_color2); 
+}
+
+header .navbar ul li ul a:hover {
+    background: var(--bg_color4);
+    color: var(--text_color2);
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    /* border-top: 2px solid var(--bg_color4); */
+    border-bottom: 2px solid var(--bg_color4);
+}
+
+header .navbar ul li ul li:hover {
+    /*  border-top: 2px solid var(--bg_color8); */
+    border-bottom: 2px solid var(--bg_color8);
+}
+
+
+header .navbar ul li:hover>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg_color9);
+    overflow-x: hidden;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 745px;
+    background: var(--bg_color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+
+.banner .content {
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    color: var(--text_color1);
+    font-size: 60px;
+}
+
+.banner .content p {
+    color: var(--text_color1);
+    font-size: 18px;
+}
+
+.Most {
+    position: relative;
+    background: var(--bg_color4);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 0px 75px 0px 75px;
+}
+
+.Most .contentBx {
+    background: var(--bg_color4);
+    width: 50%;
+    height: auto;
+}
+
+.heading {
+    color: var(--text_color1);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.text {
+    color: var(--text_color1);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+.Most .contentBx .text {
+    color: var(--text_color1);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.Most .imgBx {
+    cursor: pointer;
+    background: url('../media/thumbs_b_c_7cf58176a4dc19b0977f7b1e7b4568dd.jpg');
+    width: 50%;
+    height: auto;
+    background-size: cover;
+    padding-left: 40px;
+}
+
+.Players {
+    background: var(--bg_color3);
+    padding: 100px;
+    text-align: center;
+}
+
+.Players .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.Players .container .PlayerBx {
+    border-radius: 10px;
+    position: relative;
+    background: var(--text_color2);
+    width: 350px;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.Players .container .PlayerBx h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text_color1);
+}
+
+
+
+.messi {
+    max-width: 130px;
+    cursor: pointer;
+}
+
+.Bale {
+    max-width: 220px;
+    cursor: pointer;
+}
+
+.Ronaldo {
+    max-width: 225px;
+    cursor: pointer;
+}
+
+.Players .container .PlayerBx:hover,
+.messi,
+.Bale,
+.Ronaldo {
+    transform: scale(1.1);
+}
+
+.Appearances {
+    background: var(--bg_color5);
+    width: auto;
+    padding: 100px;
+    padding-top: 165px;
+    margin-top: -240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 470px;
+}
+
+.Appearances .contentBx {
+    max-width: 800px;
+}
+
+.Appearances .imgBx {
+    max-width: 250px;
+    position: relative;
+}
+
+.Aboutrika {
+    width: 250px;
+    cursor: pointer;
+}
+
+.Appearances .imgBx img {
+    max-width: 100%;
+}
+
+.Teams {
+    height: 350px;
+    background: var(--bg_color6);
+    padding: 100px;
+    text-align: center;
+    z-index: 1;
+}
+
+.Teams .imgBx {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.Teams .imgBx img {
+    width: 100px;
+    opacity: 0.25;
+    cursor: pointer;
+    transition: all 0.5s ease 0.01s;
+    transform: scale(1);
+}
+
+.Teams .imgBx .madrid {
+    width: 140px;
+    transform: scale(1);
+}
+
+.Teams .imgBx :hover,
+.Paulista,
+.munchen,
+.barcelona,
+.madrid {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.Last_Version {
+    position: relative;
+    padding: 100px;
+    background: var(--bg_color7);
+    text-align: center;
+    z-index: 2;
+}
+
+.Last_Version .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.Last_Version .container .contentBx1 {
+    background: var(--bg_color8);
+    background: url('../media/Club-World-Cup-2021.jpg');
+    background-size: cover;
+    padding: 60px 50px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.Last_Version .container .contentBx2 {
+    background: var(--bg_color8);
+    background: url('../media/Golden Boot.jpg');
+    background-size: cover;
+    padding: 60px 50px;
+    width: 550px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.Last_Version .container .contentBx1 p {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text_color1);
+}
+
+.Last_Version .container .contentBx1 h3 {
+    width: 100%;
+    font-size: 40px;
+    text-align: end;
+    font-weight: 600;
+    color: var(--text_color6);
+}
+
+.Last_Version .container .contentBx2 p {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--text_color1);
+}
+
+.Last_Version .container .contentBx2 h3 {
+    width: 100%;
+    font-size: 40px;
+    text-align: end;
+    font-weight: 600;
+    color: var(--text_color6);
+}
+
+.contact {
+    padding: 100px;
+    background: var(--bg_color1);
+    text-align: center;
+    z-index: 2;
+}
+
+.imgBx2 {
+    background: url(../media/GettyImages.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.imformation {
+    position: relative;
+    background: var(--bg_color1);
+    width: 100%;
+    height: 695px;
+    display: flex;
+}
+
+
+
+.containe {
+    padding: 100px;
+    padding-top: 200px;
+    width: 50%;
+    height: auto;
+    background: linear-gradient(135deg, #DE5757, #40A1DE);
+    padding: 25px 30px;
+    border-radius: 0px;
+}
+
+.containe .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 20px 20px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus{
+    border-color: #DE5757;
+}
+
+form .button {
+    height: 45px;
+    margin-top: 30px;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #d13333, #288ac6);
+}
+
+form .button input:hover {
+    transform: scale(1.05);
+    background: linear-gradient(-135deg, #DE5757, #40A1DE);
+}
+
+.footer {
+    background: var(--bg_color6);
+    padding: 0px 70px;
+    display: flex;
+    height: 165px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .text a {
+    text-decoration: none;
+    color: var(--text_color1);
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer ul li a img {
+    max-width: 20px;
+}
+
+
+.goupbtn {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--bg_color10);
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+.upBtn {
+    width: 21px;
+    filter: invert(1);
+    top: -3px;
+}
+

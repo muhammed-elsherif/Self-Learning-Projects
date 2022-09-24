@@ -1,0 +1,328 @@
+*{ 
+padding: 0px;
+margin: 0px;
+line-height: 1.6;
+font-family: Arial, Helvetica, sans-serif;}
+#dark-mode
+{
+  position:absolute;
+  width:45px;
+  height:22px;
+  right:20px;
+  top:20px;
+  border:2px solid;
+  border-radius:20px;
+  
+}
+ #dark-mode:before
+{
+  position:absolute;
+  content:" ";
+  width:20px;
+  height:20px;
+  left:1px;
+  top:1px;
+  border-radius:50%;
+  cursor:pointer;
+  background:black;
+  transition:0.4s;
+  
+}
+#dark-mode.active:before
+{
+  left:24px;
+  background:#000000;
+}
+body.night
+{
+  background:#333;
+  color:rgb(0, 0, 0);
+
+}
+
+.navbar {
+height: 57px;
+overflow: hidden;
+background-color: #333;
+font-family: Arial;
+display: flex;
+justify-content: center;
+z-index: 100000;
+}
+  
+  .navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 20px 23px;
+	text-decoration: none;
+  }
+  
+.dropdown { overflow: hidden; }
+  
+  .dropdown .dropbtn {
+	padding-left: 22px;
+	padding-right: 22px;
+	height: 57px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+  }
+  
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+	background-color: black;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1000000000000;
+  }
+  
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+.WebLogo {
+	  width: 59px;
+	  position: absolute;
+	  left: 50px;
+  }
+.active {
+    background-color: #4ddbff;
+  }
+  
+  label
+  {
+	position:absolute;
+	width:45px;
+	height:22px;
+	right:20px;
+	top:15px;
+	border:2px solid;
+	border-radius:20px;
+	
+  }
+   label:before
+  {
+	position:absolute;
+	content:" ";
+	width:20px;
+	height:20px;
+	left:1px;
+	top:1px;
+	border-radius:50%;
+	cursor:pointer;
+	background:black;
+	transition:0.4s;
+	
+  }
+  label.active:before
+  {
+	left:24px;
+	background:#000;
+  }
+body.night
+{
+	background:#000;
+	color:#fff;
+}
+body 
+{
+    background-color:#4ddbff;
+}
+#header
+{
+	text-align:center;
+	 background-color: #ddd;
+	 padding: 15px;
+
+	 letter-spacing: 15px;
+}
+.top1{ padding: 15px;}
+table
+{
+width:700px;
+}
+table th 
+{
+
+background-color:black;
+padding: 4px 30px 4px 8px;
+}
+table td 
+{
+border:1px solid black;
+padding:4px 8px;
+color:black;
+text-align: center;
+background-color: #ddd;
+}
+#imgtab
+{
+	width:1000px;
+	height:270px;
+}
+#buffonn
+{
+	width:250px;
+	height:200px;
+	margin-left:50px;
+}
+#tab
+{
+	float:left;
+	height:200px;
+}
+#buffon
+{
+	width:200px;
+	height:200px;
+}
+#listb
+{
+	width:100%;
+	height:220px;
+}
+#list
+{
+	float:left;
+	height:200px;
+}
+li{ padding-left: 15px;
+padding-top: 5px;}
+#buffon
+{
+	width:200px;
+	height:140px;
+	margin-left:50px;
+
+}
+#img
+{
+	width:200px; 
+	height:130px; 
+	float:right;
+}
+#listimg
+{
+	width:100%;
+	height:250px;
+}
+#ramos
+{
+	width:250px;
+	height:150px;
+	margin-left:90px;
+}
+#lista
+{
+	float:left;
+	height:200px;
+}
+#imgtabb
+{
+	width:100%;
+	height:270px;
+}
+#ramoss
+{
+	width:250px;
+	height:200px;
+	margin-left:50px;
+}
+#tabbb
+{
+	float:left;
+	height:200px;
+}
+#pirlo
+{
+	width:200px;
+	height:200px;
+	margin-left:50px;
+}
+#andrea
+{
+	width:100%;
+	height:220px;
+}
+#anpir
+{
+	float:left;
+	height:200px;
+}
+#free
+{
+	width:200px; 
+	height:100px; 
+	float:right;
+}
+#leo
+{
+	width:100%;
+	height:200px;
+}
+#messi
+{
+	width:120px;
+	height:150px;
+	margin-left:70px;
+}
+.messitable{ margin-top: 1%;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+#lionel
+{
+	float:left;
+	height:200px;
+}
+#vid1
+{
+	width:300px; 
+	height:130px; 
+	float:right;
+}
+#cr
+{
+	width:100%;
+	height:250px;
+}
+#ronaldo
+{
+	width:120px;
+	height:150px;
+	margin-left:70px;
+}
+#cris
+{
+	float:left;
+	height:200px;
+}
+.cr7table{ margin-right: auto;
+margin-left: auto;
+display: block;
+margin-top: -50px;
+}

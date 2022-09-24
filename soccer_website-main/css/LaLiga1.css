@@ -1,0 +1,390 @@
+
+*{
+	margin: 0;
+	padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+  } 
+#dark-mode
+{
+  position:absolute;
+  width:45px;
+  height:22px;
+  right:20px;
+  top:20px;
+  border:2px solid;
+  border-radius:20px;
+  
+}
+ #dark-mode:before
+{
+  position:absolute;
+  content:" ";
+  width:20px;
+  height:20px;
+  left:1px;
+  top:1px;
+  border-radius:50%;
+  cursor:pointer;
+  background:black;
+  transition:0.4s;
+  
+}
+#dark-mode.active:before
+{
+  left:24px;
+  background:#000000;
+}
+body.night
+{
+  background:#333;
+  color:rgb(0, 0, 0);
+
+}
+
+
+.navbar {
+height: 57px;
+overflow: hidden;
+background-color: #333;
+font-family: Arial;
+display: flex;
+justify-content: center;
+z-index: 100000;
+margin-bottom: 25px;}
+  
+  .navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 20px 23px;
+	text-decoration: none;
+  }
+  
+.dropdown { overflow: hidden; }
+  
+  .dropdown .dropbtn {
+	padding-left: 22px;
+	padding-right: 22px;
+	height: 57px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+  }
+  
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+	background-color: black;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1000000000000;
+  }
+  
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
+  
+.WebLogo {
+	  width: 59px;
+	  position: absolute;
+	  left: 50px;
+  }
+.active {
+    background-color: yellowgreen;
+  }
+  
+  label
+  {
+	position:absolute;
+	width:45px;
+	height:22px;
+	right:20px;
+	top:15px;
+	border:2px solid;
+	border-radius:20px;
+	
+  }
+   label:before
+  {
+	position:absolute;
+	content:" ";
+	width:20px;
+	height:20px;
+	left:1px;
+	top:1px;
+	border-radius:50%;
+	cursor:pointer;
+	background:black;
+	transition:0.4s;
+	
+  }
+  label.active:before
+  {
+	left:24px;
+	background:#000;
+  }
+body.night
+{
+	background:#b3ecff;
+	color:#ff1a1a;
+}
+body
+{
+	background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(pictures/background.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+}
+#logo 
+{
+	width:100px;
+	height:100px;
+	padding-left: 5px;
+}
+.title
+{
+	background-color:#ffffb3b0;
+	padding: 5px 10px;
+	
+}
+#header
+{
+	text-align:center;
+	margin: 5px;
+}
+#teams
+{
+	background-color:#ffffb3b0;
+	margin: 1% 0%;
+}
+#imgvid
+{
+	width:100%;
+	height:270px;
+}
+#vid1
+{
+	width:400px;
+	height:300px;
+	margin-left:240px;
+	margin-top: -3%;
+}
+#LaLigaTeams
+{
+	float:left;
+	width:400px;
+	height:250px;
+	margin-right:30px;
+}
+#bestteams
+{
+	color:#ffffb3;
+	padding-left: 5px;
+}
+#ramos
+{
+	width:200px; 
+	height:134px; 
+	float:right;
+	margin-top: 1%;
+}
+#realmadrid
+{
+	background-color:#ffffb3b0;
+	margin: 1% 0%;
+	line-height: 1.4;
+}
+#messi
+{
+	width:200px;
+	height:134px;
+	float:right;
+}
+#barcelona
+{
+	background-color:#ffffb3b0;
+	margin: 1% 0%;
+	line-height: 1.4;
+}
+#saurez
+{
+	width:200px;
+	height:134px;
+	float:right;
+}
+#atleticomadrid
+{
+	background-color:#ffffb3b0;
+	margin: 1% 0%;
+	line-height: 1.4;
+}
+#top10
+{
+	color:#ffffb3;
+	padding-left: 5px;
+}
+#topscorers
+{
+	width:500px; 
+	height:300px; 
+	float:right;
+
+}
+table
+{
+width:700px;
+}
+table th 
+{
+text-align:left;
+background-color:#ffffb3b0;
+padding: 4px 30px 4px 8px;
+}
+table td 
+{
+border:1px solid #ffffb3;
+padding:4px 8px;
+color:#ffffb3;
+}
+#young
+{
+	color:#ffffb3;
+	margin-top: 1%;
+	padding-left: 5px;
+}
+
+#gavi
+{
+	width:170px;
+	height:112px; 
+	float:left;
+	margin-top: 1%;
+
+}
+#gavibarca
+{
+	background-color:#ffffb3b0;
+	line-height: 1.4;
+	margin: 1% 0%;
+}
+#pedri
+{
+	width:170px;
+	height:113px;
+	float:right;
+}
+#pedribarca
+{
+	background-color:#ffffb3b0;
+	line-height: 1.4;
+	margin: 1% 0%;
+}
+#nico
+{
+	width:170px;
+	height:135px; 
+	float:left;
+}
+#nicoath
+{
+	background-color:#ffffb3b0;
+	line-height: 1.4;
+	margin: 1% 0%;
+}
+
+#teamssponsors
+{
+	background-color:#ffffb3b0;
+}
+
+#sponsorslaliga
+{
+	width:500px; 
+	height:500px; 
+	float:right;
+	margin-right:300px;
+	padding: 5px;
+}
+#sponsors
+{
+	color:#ffffb3;
+	text-align:left;
+	padding: 5px;
+}
+.list  a:link
+{
+	color: #ffffb3;
+    background-color: transparent;
+    text-decoration: none;
+}
+.list  a:hover
+{
+	color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.list a:visited
+{
+   color: #ffffb3;
+   background-color: transparent;
+   text-decoration: none;
+}
+.list  a:active
+{
+	color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+footer
+{
+
+	background:#ffffb3b0;
+	height:auto;
+	width:100%;
+	font-family:"open sans";
+	padding-top:40px;
+	color:black;
+}
+.footer-content
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	text-align:center;
+}
+.footer-content h3
+{
+	font-size:1.8rem;
+	font-weight:400;
+	text-transform:capitalize;
+	line-height:3rem;
+}
+.footer-content p
+{
+	max-width:500px;
+	margin:10px auto;
+	line-height:28px;
+	font-size:14px;
+}

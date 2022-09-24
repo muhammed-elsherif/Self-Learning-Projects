@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+table,td,th{border:2px solid black ;
+border-collapse: collapse;
+text-align: center; }
+body{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75)), url(../media/test.png);
+ 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   
+}
+
+
+.navbar {
+    height: 57px;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    z-index: 100000;
+  
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 20px 23px;
+    text-decoration: none;
+  }
+  
+  .dropdown { overflow: hidden; }
+  
+  .dropdown .dropbtn {
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 57px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+  }
+  
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: black;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1000000000000;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+    .active {
+      background-color: rgb(2, 117, 75);
+    }
+  
+    .WebLogo {
+      width: 59px;
+      position: absolute;
+      left: 50px;}
+
+#header{ text-align: center;
+background-color: rgba(221, 221, 221, 0.522);
+padding: 20px 20px 25px 20px;
+}
+
+#headerp{
+padding-left: 5%;
+padding-right: 2%;
+line-height: 1.5;
+padding-bottom: 40px; }
+
+#headerh2{ padding: 25px 0px 25px 20px; }
+
+.after{ background-color: rgba(2, 117, 75, 0.356);}
+
+#img1{ 
+width: 350px;
+height: fit-content;}
+
+.championsanthem{ 
+background-color: rgb(255, 0, 0, 0.356);
+display: flex;
+justify-content: space-around;
+padding-top: 35px;
+padding-bottom: 1%;}
+
+#anthem{ text-align: center;
+font-size: larger;}
+
+
+.tabless{
+background-color: rgb(0, 255, 255, 0.356); 
+padding-top: 3%;
+padding-bottom: 3%;}
+
+.champtable1{ 
+border: 2px solid black;
+height: 480px;
+margin-top: 1%;
+float: right;}
+
+.champtable3{ 
+width:71%;
+margin-top: 1%;}
+
+.lastchamp{ 
+padding-top:3%;
+padding-bottom: 3%;
+background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.356)), url(../media/last.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.lastchamp h2{ 
+padding: 25px 0px 40px 20px;
+color: antiquewhite;}
+
+.lastchamp p{ 
+padding-left: 5%;
+padding-right: 2%;
+line-height: 1.5;
+padding-bottom: 35px;
+color: antiquewhite; 
+padding-bottom: 35px;
+line-height: 1.4;}
+
+#toptop{
+margin-left: auto;
+margin-right: auto; 
+display: block; 
+width: 50%;}
+

@@ -1,0 +1,31 @@
+#flag {
+    width: 200px;
+    height: 150px;
+    float: right;
+    border: 24px;
+}
+
+.playersLegends {
+    width: 280px;
+    height: 250px;
+    float: left;
+    padding: 5px;
+}
+
+#gold {
+    width: 20px; 
+    height: 17px;
+    border-radius: 24px;
+}
+
+.moreInf {
+    float: right;
+}
+
+a:visited {
+    color: none;
+}
+
+a.moreInf:hover {
+    color: black;
+}

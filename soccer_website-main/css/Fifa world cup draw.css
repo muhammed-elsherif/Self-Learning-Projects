@@ -1,0 +1,254 @@
+body{
+background-color: #d8d8d8;
+background-attachment: fixed;
+background-image: url(../media/fifa\ logo.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size:30%;} 
+
+
+#dark-mode
+  {
+	position:absolute;
+	width:45px;
+	height:22px;
+	right:20px;
+	top:30px;
+	border:2px solid;
+	border-radius:20px;
+	
+  }
+   #dark-mode:before
+  {
+	position:absolute;
+	content:" ";
+	width:20px;
+	height:20px;
+	left:1px;
+	top:1px;
+	border-radius:50%;
+	cursor:pointer;
+	background:black;
+	transition:0.4s;
+	
+  }
+  #dark-mode.active:before
+  {
+	left:24px;
+	background:#000;
+  }
+body.night
+{
+background:black;
+background-image: url(../media/fifa\ logo.png);
+background-attachment:fixed;
+color:rgb(11, 13, 57);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 30%;
+}
+.navbar {
+height: 57px;
+overflow: hidden;
+background-color: #333;
+font-family: Arial;
+display: flex;
+justify-content: center;
+z-index: 100000;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 23px;
+  text-decoration: none;
+}
+
+.dropdown { overflow: hidden; }
+
+.dropdown .dropbtn {
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 57px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000000000000;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  .active {
+    background-color: goldenrod;
+  }
+
+  .WebLogo {
+    width: 59px;
+    position: absolute;
+    left: 50px;
+}
+
+.abc{
+padding: 2px;
+height: 50px;
+margin:0px 30px ;
+border-radius: 200%;
+background-color: #333;
+color: white;
+cursor: pointer;}
+
+.flex{
+display: flex;
+width: 100%;
+box-sizing: border-box;}
+  
+.ohoo {
+background-color: #172774;
+border-bottom: 0px solid white ;
+border-bottom-right-radius: 45px; 
+border-bottom-left-radius: 45px;}
+ 
+.twopic{
+justify-content: center ;
+padding: auto;}
+
+.img1 img{
+margin-top: 30px;
+margin-right: 50px;
+border: 1px solid white;
+border-radius: 12px;
+box-sizing: border-box;
+cursor: pointer;}
+
+.img2 img{ 
+margin-top: 30px;
+margin-left: 50px;
+border: 1px solid white;
+border-radius: 12px;
+box-sizing: border-box;
+cursor: pointer;}
+
+.twopic :hover{ transform: scale(1.055,1.055);}
+
+.ch2{
+flex-wrap: nowrap;
+flex-grow: 1;
+flex-shrink: 0;
+margin-left: 80px;}
+
+.ch3{ 
+flex-shrink: 1;
+padding-top: 1%;} 
+
+.h11{
+background-color: goldenrod;
+color: #172774;
+width: fit-content;
+border-radius: 12px;
+padding: 15px;
+margin: 0px 280px;
+flex-grow: 1;
+height: 50px;
+font-family: Arial, Helvetica, sans-serif;
+font-style:oblique;}
+
+
+#stpg p{ 
+font-size: large; 
+line-height: 1.6;
+margin-top: 2%;
+background-color: #77d970bf;  
+border: 0px solid white;
+border-radius: 15px;
+padding: 0px 10px;}
+
+table,th,td{
+border: 1px solid rgb(255, 255, 255);
+border-collapse: collapse;
+text-align: center;
+background-color: #d1c7c5;
+margin: 10px;}
+        
+.container { 
+height: 400px; 
+justify-content: space-between;
+margin-top: 2%;}
+.child1{
+border: 2px solid black; 
+height: 400px;
+width: 400px;
+background-color:rgb(245, 222, 179) ;
+border-radius: 12px;
+order: 3;
+line-height: 2;}
+
+.smallhead{
+border: 0px solid white;
+background-color: #172774;
+width: fit-content;
+border-radius: 10px;
+padding: 10px;
+color: goldenrod;}
+        
+#tamema{ 
+border: 0px solid white;
+border-radius: 12px;}
+               
+#pots{
+width: 700px;
+height:500px;
+margin-left: auto;
+margin-right: auto;}
+
+#pot{    
+font-size: large; 
+line-height: 1.6;
+background-color: #77d970bf;  
+border: 0px solid white;
+border-radius: 15px;
+padding: 0px 10px;}
+
+.transsmallhead h2:hover{ transform: scale(1.20,1.20);
+transition: .2s;}
+
+#secpg{ 
+border: 0px solid white;
+background-color: #E8630A;
+width: fit-content; 
+border-radius: 10px;
+padding: 5px;}
+

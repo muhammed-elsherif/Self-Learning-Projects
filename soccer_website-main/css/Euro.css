@@ -1,0 +1,240 @@
+*{ font-family: arial;
+}
+
+.navbar {
+  height: 57px;
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  z-index: 100000;}
+    
+  .navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 23px;
+  text-decoration: none;}
+    
+  .dropdown { overflow: hidden;}
+    
+  .dropdown .dropbtn {
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 57px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;}
+    
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+  background-color: black;}
+    
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000000000000;}
+    
+  .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;}
+    
+  .dropdown-content a:hover {
+  background-color: #ddd;}
+    
+  .dropdown:hover .dropdown-content{
+  display: block;}
+    
+  .active {
+  background-color: #b3ecff;}
+    
+  .WebLogo {
+  width: 59px;
+  position: absolute;
+  left: 50px;}
+  
+   label
+  {
+	position:absolute;
+	width:45px;
+	height:22px;
+	right:20px;
+	top:20px;
+	border:2px solid;
+	border-radius:20px;
+	
+  }
+   label:before
+  {
+	position:absolute;
+	content:"";
+	width:20px;
+	height:20px;
+	left:1px;
+	top:1px;
+	border-radius:50%;
+	cursor:pointer;
+	background:white;
+	transition:0.4s;
+	
+  }
+  label.active:before
+  {
+	left:24px;
+	background:#b3ecff;
+  }
+body.night
+{
+	background:#b3ecff;
+	color:#b3ecff;
+}
+
+  
+body 
+{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../media/euro2.png);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+}
+#header
+{
+	text-align:center;
+	background-color: #00cccc;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo
+{
+	float:left;
+	width:300px;
+	height:330px;
+	margin-left:370px;
+}
+#introduction
+{
+	color:#00cccc;
+}
+table
+{
+width:500px;
+}
+table th 
+{
+text-align:left;
+background-color:#00cccc;
+padding: 4px 30px 4px 8px;
+}
+table td 
+{
+border:1px solid #ffffb3;
+padding:4px 8px;
+color:#00cccc;
+}
+#introduction
+{
+  background-color:#00cccc;
+  color:black;
+}
+#Draw
+{
+	color:#00cccc;
+	
+	text-align:center;
+}
+#draw
+{
+height:300px;
+width:700px;
+margin-left:400px;
+}
+#tops
+{
+	background-color:#00cccc;
+}
+#cr7
+{
+	width:200px;
+	height:120px;
+  margin-left: 2%;
+}
+#ronaldo{ margin-left: 2%;}
+#patrick
+{
+	width:200px;
+	height:120px;
+	margin-left:35%;
+}
+
+#patrikkk{ padding-left: 35%;}
+
+#forsberg
+{
+	width:200px;
+	height:120px;
+	padding-left:70%;
+}
+
+#emil{padding-left: 70%; }
+
+#intro
+{
+	text-align:center;
+	color:#00cccc;
+}
+.vid
+{
+	margin-left:410px;
+	width:700px;
+	height:300;
+}
+#most
+{
+	color:#00cccc;
+	
+}
+
+footer
+{
+
+	background:#00cccc;
+	height:auto;
+	width:100%;
+	font-family:"open sans";
+	padding-top:40px;
+	color:black;
+}
+.footer-content
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	text-align:center;
+}
+.footer-content h3
+{
+	font-size:1.8rem;
+	font-weight:400;
+	text-transform:capitalize;
+	line-height:3rem;
+}
+.footer-content p
+{
+	max-width:500px;
+	margin:10px auto;
+	line-height:28px;
+	font-size:14px;
+}
